@@ -1,12 +1,41 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="auto">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="refresh" content="0.2; url=https://daupmrb.vipsthelovehaven.com/um9h34e">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Redireccionando...</title>
+  <title>Redirecting...</title>
   <script>
-    // Puedes agregar aquí un píxel o evento de tracking si usas Facebook, Google, etc.
+    // Traducciones por idioma
+    const mensajes = {
+      es: "Espera un momento...",
+      en: "Wait a moment...",
+      fr: "Veuillez patienter...",
+      de: "Einen Moment bitte...",
+      it: "Attendere un momento...",
+      pt: "Aguarde um momento...",
+      ru: "Подождите немного...",
+      zh: "请稍等...",
+      ja: "少々お待ちください...",
+      ko: "잠시만 기다려주세요...",
+      ar: "يرجى الانتظار قليلاً...",
+      hi: "कृपया प्रतीक्षा करें...",
+      tr: "Lütfen bekleyiniz...",
+      ro: "Așteptați un moment...",
+      pl: "Proszę chwilę poczekać...",
+      nl: "Even geduld aub...",
+      th: "กรุณารอสักครู่...",
+      vi: "Vui lòng chờ một chút..."
+    };
+
+    const lang = (navigator.language || 'en').substring(0, 2);
+    const mensaje = mensajes[lang] || mensajes['en'];
+
+    // Mostrar texto traducido
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("mensaje").innerText = mensaje;
+    });
+
     console.log("Usuario real haciendo click. Redireccionando...");
   </script>
   <style>
@@ -22,11 +51,13 @@
   </style>
 </head>
 <body>
-  <p>Wait a moment...</p>
-</body>
-   <div style="visibility:hidden">
+  <p id="mensaje">Wait a moment...</p>
+
+  <!-- tracking oculto -->
+  <div style="visibility:hidden">
     <center>
       <img src="//whos.amung.us/pingjs/?k=lonelywolf&amp;t=TeamCastle&amp;x=https://www.youtube.com/" style="display:none">
     </center>
   </div>
+</body>
 </html>
